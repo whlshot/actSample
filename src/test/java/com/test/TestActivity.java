@@ -21,7 +21,7 @@ public class TestActivity {
 		 * public static final String DB_SCHEMA_UPDATE_CREATE_DROP = "create-drop";每次都先删除表在创建新的表
 		 * public static final String DB_SCHEMA_UPDATE_TRUE = "true";如果不存在表就创建表，如果存在就直接使用
 		 */
-		processEngineConfiguration.setDatabaseSchemaUpdate(ProcessEngineConfiguration.DB_SCHEMA_UPDATE_TRUE);
+		processEngineConfiguration.setDatabaseSchemaUpdate(ProcessEngineConfiguration.NO_TENANT_ID);
 		ProcessEngine processEngine = processEngineConfiguration.buildProcessEngine();
 		System.out.println(processEngine);
 	}

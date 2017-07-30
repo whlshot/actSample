@@ -9,6 +9,7 @@ import org.activiti.engine.runtime.ProcessInstance;
 import org.activiti.engine.task.Task;
 import org.junit.Test;
 
+//并行网关
 public class TestParallelGateWay {
 	@Test // 部署流程定义
 	public void develpomentProcessDefinition() {
